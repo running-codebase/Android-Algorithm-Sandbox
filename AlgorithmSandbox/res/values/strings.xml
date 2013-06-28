@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings"></string>
+    <string name="app_name">Test2</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+	<string name="dijkstras_activity_launcher">Dijkstra</string>
+    <string name="sort_activity_launcher">Sort</string>
+    <string name="string_generate_graph">Generate Graph</string>
+    <string name="string_generate_graph_text">Ungenerated</string>
+    <string name="string_run_algorithm">Run Dijkstras</string>
+    <string name="string_graph_build_failed">Graph Gen /nFailed</string>
+    <string name="string_graph_build_success">Done</string>
+    <string name="string_shuffled">Shuffled</string>
+    <string name="string_sorted">Sorted</string>
+    <string name="string_brute_force">Brute Force</string>
+    <string name="string_bubble_sort">Bubble Sort</string>
+    <string name="string_merge_sort">Merge Sort</string>
+    
+    
+    
+</resources>

@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_generator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/shuffle_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/string_shuffled" />
+
+            <TextView
+                android:id="@+id/shuffle_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/shuffle_button"
+                android:text="@string/string_sorted" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_generator"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/sort_brute_force_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/string_brute_force" />
+            
+            </RelativeLayout>
+
+        <!--
+              <TextView
+            android:id="@+id/generated_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sort"
+            android:layout_margin="10dp" />
+
+        -->
+
+        <Button
+            android:id="@+id/sort_bubble_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_sort"
+            android:text="@string/string_bubble_sort" />
+
+                <Button
+            android:id="@+id/sort_merge_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sort_bubble_button"
+            android:text="@string/string_merge_sort" />
+        
+        
+        <TextView
+            android:id="@+id/algorithm_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/layout_generator"
+            android:layout_below="@+id/sort_merge_button"
+            android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
